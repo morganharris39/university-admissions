@@ -326,7 +326,7 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 50px auto;
+  grid-template-columns: 50px auto 44px;
   -moz-column-gap: 10px;
        column-gap: 10px;
   align-items: center;
@@ -393,6 +393,63 @@ main p {
   line-height: 150%;
 }
 
+.uniForm {
+  margin: 1rem 10px;
+}
+.uniForm label {
+  display: block;
+  font-size: 0.8rem;
+  color: orange;
+  padding-top: 0.2rem;
+}
+.uniForm h3 {
+  font-size: 1.1rem;
+  color: green;
+  margin: 2rem 0 0.5rem 0;
+}
+.uniForm input[type=text],
+.uniForm input[type=tel],
+.uniForm input[type=number],
+.uniForm input[type=email],
+.uniForm input[type=password],
+.uniForm select {
+  display: block;
+  margin: 0.1rem 0 1rem 0;
+  border: 1px solid #999;
+  border-radius: 5px;
+  border-bottom-width: 5px;
+  border-bottom-color: #555;
+  font-size: 1rem;
+  color: purple;
+  width: 250px;
+  padding: 0.5rem 10px;
+}
+.uniForm input[type=radio],
+.uniForm input[type=checkbox] {
+  margin: 0 1rem 0.5rem 0;
+}
+.uniForm input[type=submit] {
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+.uniForm input:required {
+  border-bottom-color: red;
+}
+.uniForm input:focus {
+  border-bottom-color: grey;
+}
+.uniForm input:required:valid {
+  border-bottom-color: yellowgreen;
+}
+
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
   background-color: #1d295f;
@@ -419,10 +476,10 @@ footer a {
   }
   nav {
     height: auto;
-    border-bottom: 2px solid #ccc;
   }
   nav ul {
     display: flex;
+    justify-content: flex-end;
   }
   nav li a {
     border: none;

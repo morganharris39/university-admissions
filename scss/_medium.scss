@@ -10,9 +10,9 @@ body {
 
 nav {
     height: auto;
-    border-bottom: 2px solid $greyColor;
     ul {
         display: flex;
+        justify-content: flex-end;
     }
     li a {
         border: none;

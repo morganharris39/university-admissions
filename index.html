@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Navigation Example</title>
+	<title>Apply | Willow University</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
 
@@ -29,28 +29,63 @@
     <nav id="navLinks">
         <a href="#top">&#10005</a>
         <ul>
-            <li><a href="#">Clients</a></li>
+            <li><a href="#">Students</a></li>
+            <li class="active"><a href="#">Apply</a></li>
+            <li><a href="#">Academics</a></li>
             <li><a href="#">Services</a></li>
-            <li class="active"><a href="#">Best Practices</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Tuition</a></li>
         </ul>
     </nav>
 </div> <!-- end nav wrapper -->
 
 <div id="mainWrapper">
     <main>
+        <h1>University Admissions</h1>
 
-        <h1>Best Practices</h1>
-   
-        <p>Competently myocardinate cross-media infomediaries via end-to-end architectures. Enthusiastically implement end-to-end functionalities vis-a-vis excellent strategic theme areas. Conveniently supply enterprise action items with integrated innovation. Authoritatively cultivate sustainable portals for orthogonal core competencies. Distinctively coordinate team driven portals rather than synergistic processes.</p>
+        <form method="get" action="thanks.html" class="uniForm" autocomplete="on">
+            <h3>Personal Information</h3>
+            <label>First Name <input type="text" name="fname" autocomplete="given-name" required title="First Name Here"></label>
+            <label>Last Name <input type="text" name="lname" autocomplete="family-name" required title="Last Name Here"></label>
+            <label>Email <input type="email" name="email" autocomplete="email" required title="Email Here"></label>
+            <label>Phone Number <input type="tel" name="phone" autocomplete="tel" required title="Phone Number Here"></label>
+            <label>Address <input type="text" name="address" autocomplete="address-line1" title="Address Here"></label>
+            <label>City <input type="text" name="city" autocomplete="address-level2" title="City Here"></label>
+            <label>State <input type="text" name="state" autocomplete="address-level1" title="State Here"></label>
+            <label>Zip Code <input type="text" name="zip" autocomplete="postal-code" title="Zip Code Here"></label>
 
-        <p>Appropriately simplify enterprise information via leveraged total linkage. Progressively grow installed base infrastructures without open-source technologies. Distinctively embrace mission-critical internal or "organic" sources after competitive imperatives. Professionally whiteboard state of the art models through high-payoff expertise. Authoritatively exploit transparent users through virtual channels.</p>
+            <h3>Previous School Information</h3>
+            <label>
+                Previous High School
+                <select name="education">
+                    <option value="No Selection Made">Please Select an Option</option>
+                    <option value="af">American</option>
+                    <option value="orem">Orem</option>
+                    <option value="lehi">Lehi</option>
+                    <option value="provo">Provo</option>
+                    <option value="highland">Highland</option>
+                    <option value="spanishfork">Spanish Fork</option>
+                    <option value="springville">Springville</option>
+                    <option value="payson">Payson</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
 
-        <p>Interactively transition user-centric web services without scalable collaboration and idea-sharing. Holisticly restore next-generation data before seamless expertise. Monotonectally grow synergistic synergy without bricks-and-clicks ROI. Uniquely optimize 24/365 convergence after integrated synergy. Distinctively synthesize high-quality methodologies for performance based bandwidth.</p>
+            <h3>Level of Education</h3>
+            <label><input type="radio" name="level" value="highschool">Highschool</label>
+            <label><input type="radio" name="level" value="associates">Associates</label>
+            <label><input type="radio" name="level" value="bachelors">Bachelors</label>
 
-     
+            <h3>Communication Preferences</h3>
+            <label><input type="checkbox" name="sendemail">Send Email Updates</label>
+            <label><input type="checkbox" name="sendtext">Send Text Updates</label>
+            <label><input type="checkbox" name="sendmail">Send Mail Updates</label>
 
+            <h3>Create an Account</h3>
+            <label>Username (5-10 letters)<input type="text" required pattern="[A-Za-z]{5,10}" title="Please enter a username between 5-10 letters"></label>
+            <label>Password (at least 6 characters long)<input type="password" name="password" required pattern=".{6,}" title="Please use at least 6 characters"></label>
+
+            <input type="submit" value="Apply Now">
+        </form>
     </main>
 </div><!-- end main wrapper -->
     

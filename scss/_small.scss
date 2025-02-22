@@ -25,7 +25,7 @@ body {
 #headerWrapper {border-bottom: 1px solid $greyColor;}
 header {
     display: grid;
-    grid-template-columns: 50px auto;
+    grid-template-columns: 50px auto 44px;
     column-gap: $gutter;
     align-items: center; //vertically
     padding: .5rem $gutter;
@@ -94,6 +94,69 @@ main {
         line-height: $leading;
     }
 }// end main
+
+.uniForm {
+    margin: 1rem $gutter;
+    label {
+        display: block;
+        font-size: 0.8rem;
+        color: orange;
+        padding-top: 0.2rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+        color: green;
+        margin: 2rem 0 0.5rem 0;
+    }
+
+    input[type=text],
+    input[type=tel],
+    input[type=number],
+    input[type=email],
+    input[type=password],
+    select {
+        display: block;
+        margin: 0.1rem 0 1rem 0;
+        border: 1px solid #999;
+        border-radius: 5px;
+        border-bottom-width: 5px;
+        border-bottom-color: #555;
+        font-size: 1rem;
+        color: purple;
+        width: 250px;
+        padding: 0.5rem $gutter;
+    }
+
+    input[type=radio],
+    input[type=checkbox] {
+        margin: 0 1rem 0.5rem 0;
+    }
+
+    input[type=submit] {
+        border: none;
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+        padding: 0.75rem 1.5rem;
+        margin: 2rem 0;
+        font-size: 1.2rem;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    input:required {
+        border-bottom-color: red;
+    }
+
+    input:focus {
+        border-bottom-color: grey;
+    }
+
+    input:required:valid {
+        border-bottom-color: yellowgreen;
+    }
+}
 
 
 
