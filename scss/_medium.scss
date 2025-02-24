@@ -8,11 +8,19 @@ body {
     display: none;
 }
 
+#headerWrapper {
+    border: none;
+}
+
+#navWrapper {
+    border-bottom: 1px solid grey;
+}
+
 nav {
     height: auto;
     ul {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
     }
     li a {
         border: none;

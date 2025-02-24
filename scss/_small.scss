@@ -15,14 +15,14 @@ html {
 /* --------------------------- BODY --------------------------- */
 body {
     font-family: $defaultFont;
-    font-weight: $lightWeight;
+    font-weight: $normalWeight;
     min-width: 320px;
     display: grid;
 }
 
 
 /* --------------------------- HEADER --------------------------- */
-#headerWrapper {border-bottom: 1px solid $greyColor;}
+#headerWrapper {border-bottom: 1px solid grey;}
 header {
     display: grid;
     grid-template-columns: 50px auto 44px;
@@ -31,8 +31,8 @@ header {
     padding: .5rem $gutter;
     span {
         font-size: 1.6rem;
-        font-weight: $lightWeight;
-        color: $primaryColor;
+        font-weight: $heavyWeight;
+        color: $darkBlueColor;
     }
 } // end header
 
@@ -69,14 +69,14 @@ nav {
     }
     li a {
         display: block;
-        color: $primaryColor;
+        color: $lightBlueColor;
         padding: 0.9rem 2vw;
         text-decoration: none;
         text-align: right;
-        border-bottom: 1px solid $greyColor;
+        border-bottom: 1px solid grey;
     }
     li.active a {
-        color: $secondaryColor;
+        color: $orangeColor;
     }
 }
 
@@ -85,8 +85,8 @@ main {
     h1 {
         padding: 1rem $gutter.5rem $gutter;
         font-size: 1.5rem;
-        color: $secondaryColor;
-        font-weight: $lightWeight
+        color: $darkBlueColor;
+        font-weight: $heavyWeight;
     }
     p {
         padding: .5rem $gutter;
@@ -100,13 +100,13 @@ main {
     label {
         display: block;
         font-size: 0.8rem;
-        color: orange;
+        color: $lightBlueColor;
         padding-top: 0.2rem;
     }
 
     h3 {
         font-size: 1.1rem;
-        color: green;
+        color: $orangeColor;
         margin: 2rem 0 0.5rem 0;
     }
 
@@ -123,7 +123,6 @@ main {
         border-bottom-width: 5px;
         border-bottom-color: #555;
         font-size: 1rem;
-        color: purple;
         width: 250px;
         padding: 0.5rem $gutter;
     }
@@ -135,7 +134,7 @@ main {
 
     input[type=submit] {
         border: none;
-        background-color: red;
+        background-color: $lightBlueColor;
         color: white;
         border-radius: 10px;
         padding: 0.75rem 1.5rem;
@@ -143,10 +142,14 @@ main {
         font-size: 1.2rem;
         -webkit-appearance: none;
         appearance: none;
+        &:hover {
+            background-color: $darkBlueColor;
+            cursor: pointer;
+        }
     }
 
     input:required {
-        border-bottom-color: red;
+        border-bottom-color: $redColor;
     }
 
     input:focus {
@@ -154,7 +157,7 @@ main {
     }
 
     input:required:valid {
-        border-bottom-color: yellowgreen;
+        border-bottom-color: $greenColor;
     }
 }
 
@@ -162,14 +165,14 @@ main {
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-    background-color: $primaryColor
+    background-color: $orangeColor;
 } // end footer wrapper
 
 footer {
     font-size: .85rem;
     padding: 1rem $gutter;
-    color: $greyColor;
+    color: white;
     text-align: center;
     line-height: $leading;
-    a {color: $greyColor;}
+    a {color: white;}
 }// end footer

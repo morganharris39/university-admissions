@@ -313,15 +313,15 @@ html {
 
 /* --------------------------- BODY --------------------------- */
 body {
-  font-family: "Spline Sans", sans-serif;
-  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   min-width: 320px;
   display: grid;
 }
 
 /* --------------------------- HEADER --------------------------- */
 #headerWrapper {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid grey;
 }
 
 header {
@@ -334,8 +334,8 @@ header {
 }
 header span {
   font-size: 1.6rem;
-  font-weight: 300;
-  color: #1d295f;
+  font-weight: 700;
+  color: #09154b;
 }
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
@@ -370,22 +370,22 @@ nav ul {
 }
 nav li a {
   display: block;
-  color: #1d295f;
+  color: #253b9c;
   padding: 0.9rem 2vw;
   text-decoration: none;
   text-align: right;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid grey;
 }
 nav li.active a {
-  color: #7c1d47;
+  color: #8C4202;
 }
 
 /* --------------------------- MAIN --------------------------- */
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
   font-size: 1.5rem;
-  color: #7c1d47;
-  font-weight: 300;
+  color: #09154b;
+  font-weight: 700;
 }
 main p {
   padding: 0.5rem 10px;
@@ -399,12 +399,12 @@ main p {
 .uniForm label {
   display: block;
   font-size: 0.8rem;
-  color: orange;
+  color: #253b9c;
   padding-top: 0.2rem;
 }
 .uniForm h3 {
   font-size: 1.1rem;
-  color: green;
+  color: #8C4202;
   margin: 2rem 0 0.5rem 0;
 }
 .uniForm input[type=text],
@@ -420,7 +420,6 @@ main p {
   border-bottom-width: 5px;
   border-bottom-color: #555;
   font-size: 1rem;
-  color: purple;
   width: 250px;
   padding: 0.5rem 10px;
 }
@@ -430,7 +429,7 @@ main p {
 }
 .uniForm input[type=submit] {
   border: none;
-  background-color: red;
+  background-color: #253b9c;
   color: white;
   border-radius: 10px;
   padding: 0.75rem 1.5rem;
@@ -440,30 +439,34 @@ main p {
   -moz-appearance: none;
        appearance: none;
 }
+.uniForm input[type=submit]:hover {
+  background-color: #09154b;
+  cursor: pointer;
+}
 .uniForm input:required {
-  border-bottom-color: red;
+  border-bottom-color: #9c2931;
 }
 .uniForm input:focus {
   border-bottom-color: grey;
 }
 .uniForm input:required:valid {
-  border-bottom-color: yellowgreen;
+  border-bottom-color: #1d7226;
 }
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-  background-color: #1d295f;
+  background-color: #8C4202;
 }
 
 footer {
   font-size: 0.85rem;
   padding: 1rem 10px;
-  color: #ccc;
+  color: white;
   text-align: center;
   line-height: 150%;
 }
 footer a {
-  color: #ccc;
+  color: white;
 }
 
 @media only screen and (min-width: 35rem) {
@@ -474,12 +477,18 @@ footer a {
   #top a, #navLinks > a {
     display: none;
   }
+  #headerWrapper {
+    border: none;
+  }
+  #navWrapper {
+    border-bottom: 1px solid grey;
+  }
   nav {
     height: auto;
   }
   nav ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
   nav li a {
     border: none;
@@ -494,4 +503,7 @@ footer a {
     margin: auto;
   }
   /* NAVIGATION STUFF GOES HERE  */
+  nav ul {
+    justify-content: flex-end;
+  }
 }
